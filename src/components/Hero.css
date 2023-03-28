@@ -1,0 +1,13 @@
+.hero--section img {
+  height: 232px;
+  width: 395px;
+  padding-top: 30px;
+  padding-left: 150px;
+}
+.hero--section {
+  font-family: "Poppins";
+  width: 100%;
+}
+.hero--section p {
+  width: 20rem;
+}
