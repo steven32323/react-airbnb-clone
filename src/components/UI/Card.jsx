@@ -4,7 +4,7 @@ const Card = (props) => {
   return (
     <div className="card">
       <img src={props.image} className="card--img"></img>
-      <p>⭐ {props.rating} (6) · USA</p>
+      <p>⭐ {props.rating} · USA</p>
       <p>{props.description}</p>
       <p>
         <span>From ${props.price}</span> / person
