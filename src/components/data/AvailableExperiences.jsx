@@ -11,6 +11,8 @@ const DUMMY_DATA = [
     rating: "5.0 (6)",
     description: "Life lessons with Katie Zaferes",
     price: 136,
+    positionsLeft: 0,
+    country: "USA",
   },
   {
     id: 2,
@@ -18,6 +20,9 @@ const DUMMY_DATA = [
     rating: "5.0 (30)",
     description: "Learn wedding photography",
     price: 125,
+    location: "online",
+    positionsLeft: 28,
+    country: "USA",
   },
   {
     id: 3,
@@ -25,6 +30,8 @@ const DUMMY_DATA = [
     rating: "4.8 (2)",
     description: "Group Mountain Biking",
     price: 50,
+    positionsLeft: 5,
+    country: "USA",
   },
 ];
 
@@ -37,6 +44,9 @@ const AvailableExperiences = () => {
       rating={item.rating}
       description={item.description}
       price={item.price}
+      spots={item.positionsLeft}
+      country={item.country}
+      location={item.location}
     />
   ));
   return experiencesList;

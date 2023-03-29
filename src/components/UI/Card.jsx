@@ -3,8 +3,16 @@ import "./Card.css";
 const Card = (props) => {
   return (
     <div className="card">
-      <img src={props.image} className="card--img"></img>
-      <p>⭐ {props.rating} · USA</p>
+      <div className="image-wrapper">
+        <span className="available">{props.spots === 0 ? "SOLD OUT" : ""}</span>
+        <span className="available">
+          {props.location === "online" ? "ONLINE" : ""}
+        </span>
+        <img src={props.image} className="card--img" alt="Card" />
+      </div>
+      <p>
+        ⭐ {props.rating} · {props.country}
+      </p>
       <p>{props.description}</p>
       <p>
         <span>From ${props.price}</span> / person
@@ -12,4 +20,5 @@ const Card = (props) => {
     </div>
   );
 };
+
 export default Card;
