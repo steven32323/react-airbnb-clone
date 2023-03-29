@@ -1,0 +1,12 @@
+.card {
+  height: 235px;
+  width: 176px;
+}
+span {
+  font-weight: bold;
+}
+.card--img {
+  width: 176px;
+  height: 235px;
+  object-fit: cover;
+}
