@@ -4,10 +4,14 @@ const Card = (props) => {
   return (
     <div className="card">
       <div className="image-wrapper">
-        <span className="available">{props.spots === 0 ? "SOLD OUT" : ""}</span>
-        <span className="available">
-          {props.location === "online" ? "ONLINE" : ""}
-        </span>
+        {props.spots === 0 ? <span className="available">SOLD OUT</span> : ""}
+
+        {props.location === "online" ? (
+          <span className="available">ONLINE</span>
+        ) : (
+          ""
+        )}
+
         <img src={props.image} className="card--img" alt="Card" />
       </div>
       <p>
